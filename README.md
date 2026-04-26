@@ -3,7 +3,6 @@
 **GrammarGuard-C** is a high-performance, modular system implemented in C for detecting structural risks in Context-Free Grammars (CFGs). Specifically designed for compiler engineers and language designers, it identifies both **Direct** and **Indirect Left Recursion**—the primary cause of infinite loops and stack overflows in top-down parsers like LL(1) and Recursive Descent.
 
 ![C](https://img.shields.io/badge/Language-C-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![Build](https://img.shields.io/badge/Build-Clang%2FGCC-orange.svg)
 
 ---
