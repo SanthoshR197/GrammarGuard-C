@@ -1,0 +1,13 @@
+# Compiled binaries
+*.exe
+*.o
+*.out
+grammar_analyzer
+
+# Reports
+*.docx
+*.html
+report.md
+
+# VS Code
+.vscode/
