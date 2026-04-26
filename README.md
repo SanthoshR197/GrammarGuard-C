@@ -1,4 +1,4 @@
-# GrammarGuard-C 🛡️
+# GrammarGuard-C 
 
 **GrammarGuard-C** is a high-performance, modular system implemented in C for detecting structural risks in Context-Free Grammars (CFGs). Specifically designed for compiler engineers and language designers, it identifies both **Direct** and **Indirect Left Recursion**—the primary cause of infinite loops and stack overflows in top-down parsers like LL(1) and Recursive Descent.
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 *   **Universal Syntax Support**: Seamlessly parses `->`, `::=`, `:=`, and `=` delimiters without requiring user reformatting.
 *   **Dynamic Symbol Identification**: Automatically identifies Non-Terminals based on their position (LHS) rather than case-sensitivity.
@@ -21,7 +21,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ├── main.c          # Entry point and I/O orchestration
@@ -35,7 +35,7 @@
 
 ---
 
-## 🛠️ Installation & Usage
+## Installation & Usage
 
 ### 1. Prerequisites
 Ensure you have a C compiler installed (`clang` or `gcc`).
@@ -58,7 +58,7 @@ clang main.c parser.c graph.c recursion.c utils.c -o grammar_analyzer
 
 ---
 
-## 📊 Sample Analysis
+## Sample Analysis
 
 ### Input:
 ```text
@@ -83,14 +83,9 @@ Recursion_Depth: 2
 
 ---
 
-## 🧠 Logic & Algorithms
+## Logic & Algorithms
 
 The system converts raw production rules into a **Directed Dependency Graph** where an edge `A -> B` exists if non-terminal `B` is a starting symbol in any production of `A`. It then performs a **Backtracking Depth-First Search** starting from each node to identify cycles. If a cycle is found, the system measures its length to provide the **Recursion Depth**—a critical metric for determining the complexity of the grammar risk.
-
----
-
-## 📜 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Author
 **Santhosh R**
